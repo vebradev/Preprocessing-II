@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+.container-full {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+
+  nav {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      a {
+        padding: 0 3.5rem;
+        font-size: 1.7rem;
+
+        &:last-child {
+            padding-right: 0;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
