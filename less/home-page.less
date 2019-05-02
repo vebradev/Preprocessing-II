@@ -15,33 +15,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media @mobile {
-      .mobile-flex-col();
-    }
-
     .text-content {
       width: 48%;
       padding-right: 1%;
-
-      @media @mobile {
-        width: 100%;
-      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
-      @media @mobile {
-        width: 100%;
-      }
-
       img {
         border-radius: 10px;
-        
-        @media @mobile {
-          width: 100%;
-        }
+      }
+    }
+
+    @media @mobile {
+      .text-content,
+      .img-content,
+      img {
+        width: 100%;
       }
     }
   }
@@ -83,9 +75,9 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    
+
     @media @mobile {
-      .mobile-flex-col;
+      .flex-col;
     }
 
     .destination {
@@ -111,6 +103,8 @@
         }
 
         @media @mobile {
+          width: 50%;
+          margin: 0 auto;
           .background(@eastern-blue);
           .border(1px, solid, darken(@eastern-blue, 15%));
 

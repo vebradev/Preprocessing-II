@@ -1,4 +1,4 @@
-.mobile-flex-col {
+.flex-col {
   flex-direction: column;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -230,34 +230,21 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .home .content-section {
-    flex-direction: column;
-  }
-}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-}
-@media (max-width: 500px) {
-  .home .content-section .text-content {
-    width: 100%;
-  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width: 500px) {
-  .home .content-section .img-content {
-    width: 100%;
-  }
-}
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .content-section .img-content img {
+  .home .content-section .text-content,
+  .home .content-section .img-content,
+  .home .content-section img {
     width: 100%;
   }
 }
@@ -330,6 +317,8 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
+    width: 50%;
+    margin: 0 auto;
     background-color: #17A2B8;
     border: 1px solid #0f6674;
   }
