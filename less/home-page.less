@@ -2,7 +2,8 @@
   header {
     border-bottom: 2px dashed @navigation-border;
 
-    img, p {
+    img,
+    p {
       margin: 0 0 30px 0;
       padding: 0;
     }
@@ -62,6 +63,21 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        font-size: 18px;
+        text-align: center;
+        color: @white;
+        .background(@green);
+        .border(1px, solid, darken(@green, 15%));
+        .round(15px);
+        .padding(10px, 20px);
+
+        &:hover {
+          cursor: pointer;
+          .background(darken(@green, 5%));
+        }
+      }
     }
   }
 } // home

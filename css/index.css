@@ -259,3 +259,21 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #008080;
+  border: 1px solid #003334;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
+  background-color: #006667;
+}
