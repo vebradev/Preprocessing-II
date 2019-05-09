@@ -1,1 +1,22 @@
 // Mixins in here
+
+.background(@color) {
+    background-color: @color;
+}
+.border(@width, @style, @color) {
+    border: @width @style @color;
+}
+.round(@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+.padding(@vertical; @horizontal) {
+    padding-top: @vertical;
+    padding-right: @horizontal;
+    padding-bottom: @vertical;
+    padding-left: @horizontal;
+}
+.flex-col {
+    flex-direction: column;
+}
